@@ -359,6 +359,204 @@
         }
       ],
       "protocolProfileBehavior": {}
+    },
+    {
+      "name": "/posts",
+      "item": [
+        {
+          "name": "/",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "{{language}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "title",
+                  "value": "New Post Title",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "This is the content of the post.",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/posts",
+              "host": ["{{baseUrl}}"],
+              "path": ["posts"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "{{language}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{baseUrl}}/posts",
+              "host": ["{{baseUrl}}"],
+              "path": ["posts"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/:id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "{{language}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{baseUrl}}/posts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["posts", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/:id",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "{{language}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "title",
+                  "value": "Updated Post Title",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "Updated content for the post.",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/posts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["posts", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "{{language}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{baseUrl}}/posts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["posts", "1"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
     }
   ],
   "protocolProfileBehavior": {}
